@@ -25,7 +25,7 @@ function Login({ onLogin }) {
   };
 
   return (
-    <FacebookProvider appId="392084953510635">
+    <FacebookProvider appId={process.env.FB_APP_ID}>
       <div className="flex flex-col items-center">
         <LoginButton
           scope="email,public_profile,pages_show_list,read_insights,pages_read_engagement"
